@@ -97,6 +97,28 @@ img, picture, video, iframe, figure {
 
 
 
+body {
+  overflow: auto; 
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap:wrap;
+  position:absolute;
+  color: white;
+  background-color: var(--negro);
+  width:100%;
+}
+
+  
+.main{
+  width:100%;
+}
+
+.menu{
+  width:100%;
+}
+
+
 .contact{
   padding: 3rem 1rem 3.5rem;
   display:flex;
@@ -168,16 +190,6 @@ h3{
 /**  MODO DESCKTOP **/
 
 
-body {
-  overflow: auto; 
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap:wrap;
-  position:absolute;
-  color: white;
-  background-color: var(--negro);
-}
 
 nav  a  i{
   visibility: hidden;
@@ -464,8 +476,35 @@ text-align:center;
   padding: 0 2px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
 
+
+  body > nav > a:nth-child(3) > p{
+    font-size: 15px;
+  }
+
+
+  body {
+    overflow: auto; 
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap:wrap;
+    position:absolute;
+    color: white;
+    background-color: var(--negro);
+    width:100%;
+  }
+  
+    
+  .main{
+    width:100%;
+  }
+  
+  .menu{
+    width:100%;
+  }
+  
   .header h1{
     padding: 2rem 0;
     font-size: 2.5rem;
