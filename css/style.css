@@ -284,11 +284,16 @@ a {
   height: inherit;
 }
 
+
+
+
+
 /**corousel*/
 
+
 .carousel{
-  width: 520px;
-  height:320px;
+  width: 320px;
+  height:210px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -303,8 +308,8 @@ a {
 }
 
 .images img{
-  width: 520px;
-  height:320px;
+  width: 330px;
+  height:210px;
 }
 
 .btn{
@@ -362,6 +367,7 @@ a {
   left:6%;
   transform: translate(-50%, -50%);
 }
+
 
 
 
@@ -477,7 +483,7 @@ text-align:center;
 }
 
 
-@media only screen and (max-width: 450px) {
+@media (min-width: 450px){
 
 
   body > nav > a > p{
@@ -522,31 +528,31 @@ text-align:center;
 
 /***  SLIDER ***/
 
-.menu{
-  padding-top: 10px;
-}
+
+
+    /**carrusel**/
 
     .carousel{
-      width: 320px;
-      height:210px;
+      width: 520px;
+      height:320px;
       overflow: hidden;
       position: relative;
       margin: 0 auto;
     }
-
+    
     .images{
-
+    
       position: absolute;
       display:flex;
       transform:translateY(0);
       transition: transform 1s ease-in-out;
     }
-
+    
     .images img{
-      width: 330px;
-      height:210px;
+      width: 520px;
+      height:320px;
     }
-
+    
     .btn{
       border: none;
       background-color: white;
@@ -554,12 +560,12 @@ text-align:center;
       border-radius: 50%;
       margin: 0 5px;
     }
-
+    
     .imagen{
       position: relative;
     }
-
-
+    
+    
     .med {
       position: absolute;
       top: 50%;
@@ -572,11 +578,11 @@ text-align:center;
       border-style: double;
       border-color: #222;
     }
-
+    
     .med i{
       font-size: 20px;
     }
-
+    
     .next{
       border-width: 1px;
       border-style: solid;
@@ -589,7 +595,7 @@ text-align:center;
       left:92%;
       transform: translate(-50%, -50%);
     }
-
+    
     .prev{
       border-width: 1px;
       border-style: solid;
@@ -602,6 +608,7 @@ text-align:center;
       left:6%;
       transform: translate(-50%, -50%);
     }
+    
 
     .footer_social p{
       font-size:18px;
@@ -679,7 +686,7 @@ text-align:center;
    .main {
     justify-content: center;
     width: 88%;
-    padding: 1.5rem 1.5rem 0rem 1.5rem ;
+    /*padding: 1.5rem 1.5rem 0rem 1.5rem ;*/
     max-width: 1240px;
     margin:auto;
   }
