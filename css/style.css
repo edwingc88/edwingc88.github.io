@@ -476,10 +476,11 @@ text-align:center;
   padding: 0 2px;
 }
 
-@media (max-width: 450px) {
+
+@media only screen and (max-width: 450px) {
 
 
-  body > nav > a:nth-child(3) > p{
+  body > nav > a > p{
     font-size: 15px;
   }
 
@@ -526,8 +527,8 @@ text-align:center;
 }
 
     .carousel{
-      width: 350px;
-      height:230px;
+      width: 320px;
+      height:210px;
       overflow: hidden;
       position: relative;
       margin: 0 auto;
@@ -542,8 +543,8 @@ text-align:center;
     }
 
     .images img{
-      width: 350px;
-      height:230px;
+      width: 330px;
+      height:210px;
     }
 
     .btn{
@@ -614,7 +615,7 @@ text-align:center;
 
 }
 
-@media (min-width: 990px) {
+@media only screen and  (min-width: 990px) {
   
   .menu_link:hover{
     background-color:var(--negro);
