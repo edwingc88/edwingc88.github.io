@@ -60,7 +60,9 @@
   padding: 2rem 0 ;
 }
 
-
+#portfolio > div > div > a > img{
+  border: 1px solid white;
+}
 
 img, picture, video, iframe, figure {
   width: 100%;
@@ -268,7 +270,6 @@ a {
   width: 120px;
   height:120px;
   align-items:center;
-
 }
 
 .skills_imagenes img{
@@ -281,7 +282,9 @@ a {
 
 
 
-
+#portafolio  a img{
+  border: 1px solid white;
+}
 
 /**corousel*/
 
@@ -362,8 +365,6 @@ a {
   left:6%;
   transform: translate(-50%, -50%);
 }
-
-
 
 
 
@@ -546,6 +547,7 @@ text-align:center;
     .images img{
       width: 520px;
       height:320px;
+      
     }
     
     .btn{
@@ -559,6 +561,9 @@ text-align:center;
     .imagen{
       position: relative;
     }
+
+
+ 
     
     
     .med {
@@ -645,6 +650,11 @@ text-align:center;
       left: 0;
 
   }
+
+  #portafolio  a img{
+    border: 1px solid white;
+  }
+  
 
   .menu_link:not(:first-child) {
    /* border: 1px solid #d4d4d4;*/
@@ -773,6 +783,8 @@ text-align:center;
 
   .portafolio_wordpress_img{
     width: 50%;
+    height:350px;
+    border: #c7c7c7;
   }
 
 
@@ -785,7 +797,7 @@ text-align:center;
     gap: 1rem;
     display:flex;
     flex-direction:row-reverse ;
-    height:360px;
+   
   
   }
 
@@ -795,16 +807,18 @@ text-align:center;
 
   .portafolio_js_img{
     width: 50%;
+    height:350px;
   }
 
   .portafolio_js_img img{
     height: 340px;
+    border: 1px solid #fff;
   }
 
   .portafolio_react{
     display:flex;
     gap: 1rem;
-    height:360px;
+
   }
 
   .portafolio_react_info{
@@ -814,11 +828,13 @@ text-align:center;
   .portafolio_react_img{
     width: 50%;
     object-fit: cover;
+    height:350px;
 
   }
 
   .portafolio_react_img  img{
-    height: 340px;
+    height: 350px;
+    border: 1px solid #fff;
   }
 
 
@@ -921,6 +937,9 @@ text-align:center;
 
 /*******/
 
+#portafolio  a img{
+  border: 1px solid white;
+}
 
 
 .contact{
