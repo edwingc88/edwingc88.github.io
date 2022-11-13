@@ -41,3 +41,5 @@ function moveCarousel(){
     }
     images.style.transform = `translateX(-${index*widthImagen}px)`;
 }
+
+
