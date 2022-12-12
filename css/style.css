@@ -143,6 +143,11 @@ h2[class~="switch"]{
   width:100%;
 }
 
+.menu a.menu_link.active > p{
+  font-size: 12px;
+}
+
+
 
 .contact{
   padding: 3rem 1rem 3.5rem;
