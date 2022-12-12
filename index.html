@@ -26,7 +26,7 @@
                 <a href="./" class="menu_link">
                     <img src="img/blancoynegro.jpg" alt="boy">
                 </a>
-                <a href="#inicio" class="menu_link">
+                <a href="#inicio" class="menu_link active">
                     <i class="fa fa-home w3-xxlarge"></i>
                     <p>INICIO</p>
                 </a>
@@ -46,42 +46,47 @@
                     <i class="fa fa-envelope w3-xxlarge"></i>
                     <p>CONTACTO</p>
                 </a>
+                
+               <div id="toggle">
+                    <i class="indicator"></i>
+               </div>
     </nav>
 
     <!-- Main -->
     <main class="main" id="inicio">
     
-      <header class="header"  >
+        <header class="header"  >
         <h1 class="w3-padding-arriba-1">EDWIN MENDEZ</h1>
         <p>Desarrollador de Software</p>
   
         <img src="img/blancoynegro.jpg" alt="boy">
 
-        <p class="w3-padding-m"> Front-End (JavaScript)</p>
+        <p class="w3-padding-m"> Front End Developer</p>
+        <p class="w3-padding-m"> (JavaScript)</p>
         <div class="header_iconos w3-padding-m">
             <a href="https://api.whatsapp.com/send?phone=51990398739" target="_blank"><i class="fa fa-whatsapp "></i></a>
 
             <a href="www.linkedin.com/in/edwin-mendez-325165164" target="_blank"> <i class="fa fa-linkedin"></i></a>
 
-            <a href="cv/edwincv.pdf" download="CV-Octubre2022" target="_blank"><i class="fa fa-file-pdf"></i></a>
+            <a href="cv/edwinmendezcv.pdf" download="CV-Octubre2022" target="_blank"><i class="fa fa-file-pdf"></i></a>
 
         </div>
 
-      </header>
+        </header>
 
         <!-- About -->
         <div class="about"  id="about">
             <h2 class="w3-text-light-grey">ACERCA</h2>
             <hr>
             <p class="w3-padding-m parrafo">
-                Hola👋 Mi nombre es Edwin Mendez , soy Desarrollador de Software💻. Actualmente estoy dedicado al area de la programación y me especializó en el Desarrollo de Sitios Web. Realice mis estudios de Ingenieria Informatica en la Universidad Nacional Experimental de Guayana 🎓 .Trabaje como analista de sistemas en CVG-Ferrominera Orinoco 🏭(Empresa Basica en mi Pais) y tengo mas de 2 años de experiencia como programador independiente (freelancer) . <br> <br> Tengo disponibilidad para laborar de manera Presencial o Remota. Si necesitas crear un proyecto estoy en la orden para ayudarte 🚀💪. Desde yá te deseo muchos Exitos y Bendiciones🙏
+                Hola👋 Mi nombre es Edwin Mendez , soy Desarrollador de Software, realice mis estudios de <b>Ingenieria Informatica</b> en la Universidad Nacional Experimental de Guayana 🎓 y actualmente estoy dedicado al area de la programación . Me espacializo en el Desarrollo de Sitios Web laborando de forma Presencial y Remota. Trabaje como analista de sistemas en CVG-Ferrominera Orinoco 🏭(Empresa Conocida en mi Pais) y tengo mas de 2 años de experiencia como programador independiente (freelancer) . <br> <br> Actualmente Tengo disponibilidad para laborar , si necesitas crear un proyecto estoy en la orden para ayudarte 🚀💪. Desde yá te deseo muchos Exitos y Bendiciones🙏
             </p>
 
 
             <h3 class="w3-padding-1">Habilidades (skills)</h3>
           
             <p class="w3-padding-m parrafo"> 
-                Desde 2016 empece a adquirir experiencia profesional en el área de la Programación (Frontend JavaScript). 
+                Desde 2020 empece a adquirir experiencia profesional en el área de la Programación (Frontend JavaScript). 
                 He aplicado mis conocimientos colaborando para en empresas de desarrollo de forma presencial y remota como Freelancer. Estoy más orientado al Frontend, pero también hago Backend. <br> <br>
                 
                 Tengo la actitud de ser una persona autodidacta , emprendedora y me gusta estar a la vanguardia de las nuevas tecnologias 🔥. Adicionalmente estudie redes de telecomuniciones (Radioenlace y Fibra optica) y tengo una empresa Proveedora de servicios de Internet inalámbrico (wisp) , en donde se manipulan equipos de marcas reconocidas como Microtick , Ubiquiti , TpLink  y entre otros.    <br> <br>
@@ -92,32 +97,37 @@
                 herramientas que utilizo como desarrollador Web :HTML,
                 CSS, JavaScript , PHP, ReactJS, MysQl ,Postgresql ,Git , WordPress  y entre otros.📚 <br> <br>
             </p>
-
-            <div class="skills w3-padding-m">
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/HTML-PNG.png" alt="Harmony Tower"> 
-                </div>
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/CSS3-PNG.png" alt="CSS">
-                </div>
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/JS-PNG.png" alt="Harmony Tower">     
-                </div>
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/PHP-PNG.png" alt="Harmony Tower">
-                    
-                </div>
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/GIT-PNG.png" alt="Harmony Tower">
-                </div>
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/WORDPRESS-PNG.png" alt="Harmony Tower">
-                    
-                </div>
-                <div class="skills_imagenes">
-                    <img loading="lazy" src="img/REACT-PNG.png" alt="Harmony Tower">
+            <div class="container-skills">
+                <div class="skills w3-padding-m">
+                    <div class="skills_imagenes" id="html-png">
+                        <!-- <img loading="lazy" src="img/HTML-PNG.png" alt="Harmony Tower">  -->
+                    </div>
+                    <div class="skills_imagenes" id="css3-png">
+                        <!-- <img loading="lazy" src="img/CSS3-PNG.png" alt="CSS"> -->
+                    </div>
+                    <div class="skills_imagenes" id="js-png">
+                        <!-- <img loading="lazy" src="img/JS-PNG.png" alt="Harmony Tower">      -->
+                    </div>
+                    <div class="skills_imagenes" id="php-png">
+                        <!-- <img loading="lazy" src="img/PHP-PNG.png" alt="Harmony Tower"> -->
+                        
+                    </div>
+                    <div class="skills_imagenes" id="git-png">
+                        <!-- <img loading="lazy" src="img/GIT-PNG.png" alt="Harmony Tower"> -->
+                    </div>
+                    <div class="skills_imagenes" id="wordpress-png">
+                        <!-- <img loading="lazy" src="img/WORDPRESS-PNG.png" alt="Harmony Tower"> -->
+                        
+                    </div>
+                    <div class="skills_imagenes" id="react-png">
+                        <!-- <img loading="lazy" src="img/REACT-PNG.png" alt="Harmony Tower"> -->
+                    </div>
+                    <div class="skills_imagenes" id="next-png">
+                        <!-- <img loading="lazy" src="img/REACT-PNG.png" alt="Harmony Tower"> -->
+                    </div>
                 </div>
             </div>
+      
 
   
         </div>
@@ -134,17 +144,17 @@
                     <div class="portafolio_wordpress_info">
 
                         <h3 class="w3-padding-16 w3-text-light-grey">Desarrollo en Wordpress</h3>
-            
+                        <br>
                         <p class="parrafo">WordPress es un sistema de gestión de contenidos que te permitira publicar contenido en la web de forma rápida y simple atraves de una interfaz visual . Se puede crear cualquier tipo de sitio web: Desde Blogs, Portafolios personales , webs corporativas, revistas, tiendas online y entre otros.</p>               <br> 
                     
-                        <p class="w3-text-white" >Carateristicas principales:
+                        <p class="w3-text-white" > Algunas de sus carateristicas principales son el 
 
                             Diseños personalizable , 
                             Compatibilidad con SEO ,
                             Sitio móvil receptivo,
                             seguridad y rendimiento,
                             Administracion de usuarios y 
-                            Gestion Multimedia
+                            Gestion Multimedia. A continuación algunos sitios web realizados:
                         </p>
 
                     </div>
@@ -184,11 +194,11 @@
                 <!-- JAVASCRIPT-->
             <div class="portafolio_js w3-padding-arriba-1">
                     <div class="portafolio_js_info">
-                        <h3 class=" w3-text-light-grey">Desarrollo web Personalizado (JavaScript)</h3>
-        
-                        <p class="parrafo">Un sitio web personalizado es una forma de creación de páginas web en donde esta se genera desde cero. Está codificado para adaptarse a cualquier negocio y no hay una plantilla que limite tus necesidades . Los sitios web personalizados son flexibles a las actualizaciones , escalaran y creceran a medida que tu negocio crezca.
+                        <h3 class=" w3-text-light-grey">Desarrollo web Personalizado (JS)</h3>
+                        <br>
+                        <p class="parrafo">Sitio web personalizado realizado con HMTL , CSS y JavaScript (JS).  Es un desarrollo web que se trabaja desde cero (0)  y está codificado para adaptarse a cualquier dispositivo . Puedes crear cualquier proyecto  y No hay una plantilla que limite tus necesidades . Los sitios web personalizados son flexibles a las actualizaciones , escalaran y creceran a medida que tu negocio crezca.
                             </p>   <br>
-                       <p> A continuacion una copia de _NETFLIX_ usando HTML , CSS y JavaScript </p>
+                       <p> A continuacion un sitio web similiar a <b>_NETFLIX_</b>  usando HTML , Css y JavaScript, donde podras navegar , registrate y  hacer login . Tambien puedes usar el usuario : <b>Admin</b>    y clave: <b>Admin</b> .    </p>
                     </div>
 
                     <div class="portafolio_js_img w3-padding-m">
@@ -204,11 +214,11 @@
              
             <div class="portafolio_react w3-padding-arriba-1">
                     <div class="portafolio_react_info w3-padding ">
-                        <h3 class=" w3-text-light-grey">Desarrollo web personalizado (React JS)</h3>
-    
-                        <p class="parrafo">ReactJS es una librería JavaScript para desarrollar interfaces de usuarios mediante componentes. Sirve para desarrollar sitios y aplicaciones web de una manera más ordenada , permitiendo que las vistas se asocien con los datos, de modo que si cambian los datos, también cambian las vistas en tiempo real . Gracias a esta característica mejora la rapidez y experiencia del usuario al navegar</p>
+                        <h3 class=" w3-text-light-grey">Desarrollo web personalizado (React)</h3>
                         <br>
-                        <p>A continuacion una aplicación usando React JS </p>
+                        <p class="parrafo">ReactJS es una librería JavaScript para desarrollar cualquier proyecto web y app , donde puedes crear interfaces de usuarios mediante componentes de manera más ordenada , permitiendo que las vistas se asocien con los datos, de modo que si cambian los datos también cambian las vistas en tiempo real . Gracias a esta característica mejora la <b> rapidez </b>y <b>experiencia del usuario</b> al navegar. </p>
+                        <br>
+                        <p>A continuacion una lista de distintos ejemplos y aplicaciones usando React JS : </p>
                     </div>
 
                     <div class="portafolio_react_img  w3-padding-m">
@@ -241,7 +251,7 @@
                             <div class="presupuesto_landing_paginas w3-padding-lados-1 boder">(1) Pagina de contenido</div>
                             <div class="presupuesto_landing_incluye w3-padding-lados-1">Incluye: Analisis , diseño y desarrollo , transcripcion de textos , SEO Basico , Edicion de imagenes , 1 Mes de mantenimiento y actualización del sitio </div>
                             <div class="presupuesto_landing_precio">
-                                <h2>$160</h2>
+                                <h2>$150</h2>
                                 <span class="w3-opacity">A partir de</span>
                             </div>
                  
@@ -278,16 +288,16 @@
                             <div class="presupuesto_landing_incluye w3-padding-lados-1">Incluye: Transcripcion de Textos , SEO Basico , Edicion de imagenes , seccion de productos y funciones elementales de un comercion online , 1 mes de mantenimiento </div>
 
                             <div class="presupuesto_landing_precio">
-                                <h2>$240</h2>
-                                <span class="w3-opacity">A partir de</span>
+                                <h2>$</h2>
+                                <span class="w3-opacity">Costo por Horas</span>
                             </div>
 
                 </div>
 
                 <div class="presupuesto_codigo ">
 
-                        <div class="presupuesto_landing_name">Sitios y Aplicaciones Web  </div>
-                         <div class="presupuesto_landing_description w3-padding-lados-1"> Un Sitio o aplicacion Web es un proyecto hecho a la medida y desde cero con un desarrollo exclusivo o personalizado.Esto busca solucionar la necesidad específica de una organizacion , dandole una estructura más compleja  y robusta , la cual le permitira tener mucha más escalabilidad y rendimiento a futuro.
+                        <div class="presupuesto_landing_name">Sitio Web y App  </div>
+                         <div class="presupuesto_landing_description w3-padding-lados-1"> Un Sitio Web o una App son proyectos hechos a la medida y desde cero con un desarrollo exclusivo o personalizado.Esto busca solucionar la necesidad específica de una organizacion , dandole una estructura más compleja  y robusta , la cual le permitira tener mucha más escalabilidad y rendimiento a futuro.
                         </div>
                         <div class="presupuesto_landing_desarrollo w3-padding-lados-1">Programacion Web</div>
                         <div class="presupuesto_landing_paginas w3-padding-lados-1">(1+) Una o más Paginas de contenido</div>
@@ -385,7 +395,6 @@
 
         </div>
     
-
         <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
         <footer class="footer">
 
@@ -417,3 +426,4 @@
 </body>
 
 </html>
+
