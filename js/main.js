@@ -4,9 +4,50 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn  = document.querySelector(".next");
 
 
-//const textElement = document.querySelector("#quote");
+const navigation  = document.querySelectorAll(".menu_link");
 
-//textElement.scrollIntoView({behavior:"smooth"});
+const body  = document.querySelector("body");
+const toggle  = document.querySelector("#toggle");
+const inicio = document.querySelector("#inicio");
+const h1= document.querySelectorAll("h1");
+
+const h2= document.querySelectorAll("h2");
+
+toggle.onclick = function(){
+    toggle.classList.toggle("switch");
+    body.classList.toggle("switch");
+    inicio.classList.toggle("switch");
+   // h1[0].classList.toggle("switch");
+    for (const item of h1) {
+        console.log(h1);
+        console.log(item);
+        h1[0].classList.toggle("switch");
+    }
+
+    for (const itemh2 of h2) {
+        console.log(h2);
+        console.log(itemh2);
+        console.log(h2.length)
+        for(i=0;i<h2.length;i++){
+            h2[i].classList.toggle("switch");
+        }
+   
+    }
+ 
+}
+
+function activarLink(){
+    console.log("activo")
+    navigation.forEach((item)=>{
+        item.classList.remove('active')
+        this.classList.add('active')
+    }) 
+}
+
+navigation.forEach((item)=>{
+    item.addEventListener('click', activarLink)
+})
+
 
 prevBtn.addEventListener("click",prevSlide);
 
@@ -14,9 +55,7 @@ nextBtn.addEventListener("click",nextSlide);
 
 let widthImagen=imagesCollection[0].offsetWidth;
 
-let index=0
-/*console.log("index ",index);*/
-
+let index=0;
 
 function prevSlide(){
     index--;
@@ -31,7 +70,6 @@ function nextSlide(){
 }
 
 function moveCarousel(){
-
     widthImagen=imagesCollection[0].offsetWidth;
 
     if(index> imagesCollection.length -1){
@@ -41,5 +79,7 @@ function moveCarousel(){
     }
     images.style.transform = `translateX(-${index*widthImagen}px)`;
 }
+
+
 
 
