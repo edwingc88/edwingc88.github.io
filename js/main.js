@@ -3,7 +3,7 @@ const toggle = document.querySelector("#toggle-mode");
 const $a  = document.querySelectorAll(".main a");
 const $p  = document.querySelectorAll(".main p");
 const $h1Title= document.querySelector("#inicio > header > div.header_info > h1")
-/*const menu = document.querySelectorAll(".menu_link");*/
+const $menu = document.querySelectorAll(".menu_link p");
 
 console.log(body);
 toggle.onclick = function(){
@@ -17,6 +17,10 @@ toggle.onclick = function(){
     for(const element of $p) {
         console.log(element); 
         element.classList.toggle("switch");
+    }
+    for(const element of $menu) {
+        console.log(element); 
+        element.classList.toggle("switch_icon");
     }
     
 }
