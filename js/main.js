@@ -5,7 +5,6 @@ const $p  = document.querySelectorAll(".main p");
 const $h1Title= document.querySelector("#inicio > header > div.header_info > h1")
 const $menu = document.querySelectorAll(".menu_link p");
 
-console.log(body);
 toggle.onclick = function(){
     toggle.classList.toggle("switch");
     body.classList.toggle("switch");
@@ -22,5 +21,4 @@ toggle.onclick = function(){
         console.log(element); 
         element.classList.toggle("switch_icon");
     }
-    
 }

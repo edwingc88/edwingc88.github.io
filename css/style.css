@@ -652,6 +652,9 @@ display: none;
     align-content: center;
    }
 
+   .menu_link:nth-child(6),.menu_link:nth-child(1){
+    display:flex;
+    }
 
    .menu_link img{
     object-fit: cover;
